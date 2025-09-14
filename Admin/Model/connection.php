@@ -9,7 +9,7 @@
               $severname ="hopper.proxy.rlwy.net"; 
             $username ="root";
             $password ="CecQBHjoyvKAPvjlVAuVpFTfSzooAwTe"; 
-            $db_name ="web_mycay";
+            $db_name ="railway";
 			$port="41684";
  
             //Tao ket noi CSDL
