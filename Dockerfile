@@ -1,12 +1,12 @@
 FROM php:8.2-apache
 
-# Cài extension kết nối MySQL
-RUN docker-php-ext-install pdo pdo_mysql
+# Cài extension MySQLi và PDO MySQL
+RUN docker-php-ext-install mysqli pdo pdo_mysql
 
-# Copy toàn bộ project vào thư mục web server
-COPY . /var/www/html/
-
-# Bật mod_rewrite để hỗ trợ .htaccess
+# Bật rewrite (nếu bạn dùng .htaccess)
 RUN a2enmod rewrite
+
+# Copy code vào thư mục web root
+COPY . /var/www/html/
 
 EXPOSE 80
