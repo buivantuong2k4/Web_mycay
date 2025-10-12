@@ -1,0 +1,342 @@
+[21:18:48] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[21:18:48] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[21:19:32] [READ] MASTER Query: UPDATE  nguoidung set tennguoidung='Tu',diachi='fffffffff',sdt='2147483646',email='aaaa.@gmail.com' where id_nguoidung='10'
+[21:19:33] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[21:19:33] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[21:20:37] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[21:20:37] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[21:20:46] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC LIMIT 0,12
+[21:20:46] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[21:20:47] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC 
+[21:21:03] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[21:21:12] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[21:24:09] [READ] MASTER Query: INSERT INTO nguoidung (id_nguoidung,tennguoidung,diachi,matkhau,sdt,email,ma_pq,hinhanh) value ('','bvt','Quảng Nam','11111','0334012233','aaaa.@gmail.com','1','1760297049_z7106817688428_b49bba117b3c4015712d6ddd39bd352e.jpg')
+[21:24:10] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[21:24:21] [READ]  REPLICATION Query: SELECT* FROM nguoidung where email='bvt' limit 1
+[21:24:22] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[21:24:36] [READ]  REPLICATION Query: SELECT* FROM nguoidung where email='aaaa.@gmail.com' limit 1
+[21:24:37] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[21:25:16] [READ]  REPLICATION Query: SELECT* FROM nguoidung where email='aaaa.@gmail.com' limit 1
+[21:25:17] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[21:25:25] [READ]  REPLICATION Query: SELECT* FROM nguoidung where email='aaaa.@gmail.com' limit 1
+[21:25:26] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[21:25:27] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC LIMIT 0,12
+[21:25:27] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[21:25:27] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC 
+[21:26:29] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[21:26:30] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC LIMIT 0,12
+[21:26:30] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[21:26:30] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC 
+[21:27:26] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[21:27:26] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC LIMIT 0,12
+[21:27:26] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[21:27:26] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC 
+[21:46:05] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC LIMIT 0,12
+[21:46:05] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[21:46:05] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC 
+[21:46:10] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[21:46:23] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[21:46:35] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[21:48:05] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[21:51:15] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[21:53:45] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[21:54:42] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[21:55:06] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[21:56:24] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[21:59:04] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[21:59:28] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[21:59:33] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[21:59:37] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC LIMIT 0,12
+[21:59:37] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[21:59:37] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC 
+[22:01:33] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC LIMIT 0,12
+[22:01:33] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:01:33] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC 
+[22:01:50] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC LIMIT 0,12
+[22:01:50] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:01:50] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC 
+[22:02:07] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC LIMIT 0,12
+[22:02:07] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:02:08] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC 
+[22:02:44] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC LIMIT 0,12
+[22:02:45] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:02:45] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC 
+[22:03:16] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:04:50] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC LIMIT 0,12
+[22:04:51] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:04:51] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC 
+[22:04:52] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:06:12] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC LIMIT 0,12
+[22:06:13] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:06:13] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC 
+[22:06:14] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC LIMIT 0,12
+[22:06:14] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:06:15] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC 
+[22:06:17] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:06:34] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC LIMIT 0,12
+[22:06:34] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:06:35] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC 
+[22:06:36] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:06:40] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:06:40] [READ]  REPLICATION Query: SELECT * FROM baiviet,danhmucbaiviet WHERE baiviet.id_danhmucbv=danhmucbaiviet.id_danhmucbv ORDER BY baiviet.id_baiviet DESC LIMIT 0,4
+[22:06:41] [READ]  REPLICATION Query: SELECT * FROM baiviet,danhmucbaiviet WHERE baiviet.id_danhmucbv=danhmucbaiviet.id_danhmucbv ORDER BY baiviet.id_baiviet DESC 
+[22:06:41] [READ]  REPLICATION Query: SELECT * FROM danhmucbaiviet ORDER BY id_danhmucbv DESC
+[22:06:42] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:07:45] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:07:45] [READ]  REPLICATION Query: SELECT * FROM baiviet,danhmucbaiviet WHERE baiviet.id_danhmucbv=danhmucbaiviet.id_danhmucbv ORDER BY baiviet.id_baiviet DESC LIMIT 0,4
+[22:07:46] [READ]  REPLICATION Query: SELECT * FROM baiviet,danhmucbaiviet WHERE baiviet.id_danhmucbv=danhmucbaiviet.id_danhmucbv ORDER BY baiviet.id_baiviet DESC 
+[22:07:46] [READ]  REPLICATION Query: SELECT * FROM danhmucbaiviet ORDER BY id_danhmucbv DESC
+[22:07:47] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:09:15] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:09:16] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:10:25] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:10:27] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:11:34] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:11:36] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:11:46] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:11:47] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:11:49] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:11:49] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:11:50] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:13:38] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:13:38] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:13:39] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:13:47] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:13:47] [READ]  REPLICATION Query: SELECT * FROM baiviet,danhmucbaiviet WHERE baiviet.id_danhmucbv=danhmucbaiviet.id_danhmucbv ORDER BY baiviet.id_baiviet DESC LIMIT 0,4
+[22:13:48] [READ]  REPLICATION Query: SELECT * FROM baiviet,danhmucbaiviet WHERE baiviet.id_danhmucbv=danhmucbaiviet.id_danhmucbv ORDER BY baiviet.id_baiviet DESC 
+[22:13:48] [READ]  REPLICATION Query: SELECT * FROM danhmucbaiviet ORDER BY id_danhmucbv DESC
+[22:13:49] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:13:59] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:14:00] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:14:02] [READ]  REPLICATION Query: SELECT* FROM nguoidung where email='aaaa.@gmail.com' limit 1
+[22:14:04] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:14:04] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC LIMIT 0,12
+[22:14:04] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:14:04] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC 
+[22:14:06] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:14:57] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:14:58] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC LIMIT 0,12
+[22:14:58] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:14:58] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC 
+[22:15:00] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:15:03] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:15:04] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:15:04] [READ]  REPLICATION Query: SELECT * FROM baiviet,danhmucbaiviet WHERE baiviet.id_danhmucbv=danhmucbaiviet.id_danhmucbv ORDER BY baiviet.id_baiviet DESC LIMIT 0,4
+[22:15:04] [READ]  REPLICATION Query: SELECT * FROM baiviet,danhmucbaiviet WHERE baiviet.id_danhmucbv=danhmucbaiviet.id_danhmucbv ORDER BY baiviet.id_baiviet DESC 
+[22:15:04] [READ]  REPLICATION Query: SELECT * FROM danhmucbaiviet ORDER BY id_danhmucbv DESC
+[22:15:06] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:15:11] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:15:11] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:15:11] [READ]  REPLICATION Query: SELECT * FROM baiviet WHERE id_baiviet='12' 
+[22:15:12] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:15:17] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:15:18] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:15:18] [READ]  REPLICATION Query: SELECT * FROM baiviet,danhmucbaiviet WHERE baiviet.id_danhmucbv=danhmucbaiviet.id_danhmucbv ORDER BY baiviet.id_baiviet DESC LIMIT 0,4
+[22:15:18] [READ]  REPLICATION Query: SELECT * FROM baiviet,danhmucbaiviet WHERE baiviet.id_danhmucbv=danhmucbaiviet.id_danhmucbv ORDER BY baiviet.id_baiviet DESC 
+[22:15:19] [READ]  REPLICATION Query: SELECT * FROM danhmucbaiviet ORDER BY id_danhmucbv DESC
+[22:15:20] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:15:22] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:15:22] [READ]  REPLICATION Query: SELECT * FROM sanpham WHERE id_danhmucsp='6' ORDER BY id_sanpham DESC LIMIT 0,12
+[22:15:22] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:15:23] [READ]  REPLICATION Query: SELECT * FROM sanpham WHERE id_danhmucsp='6' ORDER BY id_sanpham DESC 
+[22:15:24] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:15:27] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:15:27] [READ]  REPLICATION Query: SELECT * FROM sanpham WHERE id_danhmucsp='5' ORDER BY id_sanpham DESC LIMIT 0,12
+[22:15:28] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:15:28] [READ]  REPLICATION Query: SELECT * FROM sanpham WHERE id_danhmucsp='5' ORDER BY id_sanpham DESC 
+[22:15:29] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:15:31] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:15:31] [READ]  REPLICATION Query: SELECT * FROM sanpham WHERE id_danhmucsp='4' ORDER BY id_sanpham DESC LIMIT 0,12
+[22:15:31] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:15:32] [READ]  REPLICATION Query: SELECT * FROM sanpham WHERE id_danhmucsp='4' ORDER BY id_sanpham DESC 
+[22:15:33] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:15:35] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:15:35] [READ]  REPLICATION Query: SELECT * FROM sanpham WHERE id_danhmucsp='3' ORDER BY id_sanpham DESC LIMIT 0,12
+[22:15:35] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:15:35] [READ]  REPLICATION Query: SELECT * FROM sanpham WHERE id_danhmucsp='3' ORDER BY id_sanpham DESC 
+[22:15:37] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:15:38] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:15:38] [READ]  REPLICATION Query: SELECT * FROM sanpham WHERE id_danhmucsp='2' ORDER BY id_sanpham DESC LIMIT 0,12
+[22:15:38] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:15:39] [READ]  REPLICATION Query: SELECT * FROM sanpham WHERE id_danhmucsp='2' ORDER BY id_sanpham DESC 
+[22:15:40] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:15:46] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:15:47] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:15:47] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:15:48] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:17:01] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:17:01] [READ]  REPLICATION Query: SELECT * FROM hoadon where id_nguoidung='10' ORDER BY timedathang DESC
+[22:17:01] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:17:03] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:17:37] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:17:37] [READ]  REPLICATION Query: SELECT * FROM hoadon where id_nguoidung='10' ORDER BY timedathang DESC
+[22:17:37] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:17:38] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:17:46] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:17:47] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:17:47] [READ]  REPLICATION Query: SELECT*FROM chitiethoadon where id_hoadon in (3868)
+[22:17:47] [READ]  REPLICATION Query: SELECT*FROM sanpham where id_sanpham='29' 
+[22:17:47] [READ]  REPLICATION Query: SELECT*FROM sanpham where id_sanpham='28' 
+[22:17:49] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:17:57] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:17:58] [READ]  REPLICATION Query: SELECT * FROM hoadon where id_nguoidung='10' ORDER BY timedathang DESC
+[22:17:58] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:17:59] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:18:01] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:18:01] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:18:02] [READ]  REPLICATION Query: SELECT*FROM chitiethoadon where id_hoadon in (7366)
+[22:18:02] [READ]  REPLICATION Query: SELECT*FROM sanpham where id_sanpham='29' 
+[22:18:03] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:18:08] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:18:08] [READ]  REPLICATION Query: SELECT * FROM hoadon where id_nguoidung='10' ORDER BY timedathang DESC
+[22:18:09] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:18:10] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:18:12] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:18:12] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:18:12] [READ]  REPLICATION Query: SELECT*FROM chitiethoadon where id_hoadon in (201)
+[22:18:12] [READ]  REPLICATION Query: SELECT*FROM sanpham where id_sanpham='29' 
+[22:18:13] [READ]  REPLICATION Query: SELECT*FROM sanpham where id_sanpham='28' 
+[22:18:13] [READ]  REPLICATION Query: SELECT*FROM sanpham where id_sanpham='27' 
+[22:18:14] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:18:19] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:18:19] [READ]  REPLICATION Query: SELECT * FROM hoadon where id_nguoidung='10' ORDER BY timedathang DESC
+[22:18:20] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:18:21] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:18:43] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:18:44] [READ]  REPLICATION Query: SELECT * FROM hoadon where id_nguoidung='10' ORDER BY timedathang DESC
+[22:18:44] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:18:45] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:19:54] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:19:54] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:19:55] [READ]  REPLICATION Query: SELECT*FROM chitiethoadon where id_hoadon in (3868)
+[22:19:55] [READ]  REPLICATION Query: SELECT*FROM sanpham where id_sanpham='29' 
+[22:19:55] [READ]  REPLICATION Query: SELECT*FROM sanpham where id_sanpham='28' 
+[22:19:57] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:20:27] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:20:27] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:20:28] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:20:39] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:20:39] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:20:39] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:20:41] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:21:14] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:21:14] [READ]  REPLICATION Query: SELECT*FROM nguoidung where email='aaaa.@gmail.com' limit 1
+[22:21:14] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:21:15] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:21:16] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:22:36] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:22:36] [READ]  REPLICATION Query: SELECT*FROM nguoidung where email='aaaa.@gmail.com' limit 1
+[22:22:36] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:22:37] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:22:38] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:26:03] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:26:03] [READ]  REPLICATION Query: SELECT*FROM nguoidung where email='aaaa.@gmail.com' limit 1
+[22:26:03] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:26:03] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:26:05] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (26)
+[22:26:35] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC LIMIT 0,12
+[22:26:35] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:26:36] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC 
+[22:26:39] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:26:48] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:27:49] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:27:52] [READ]  REPLICATION Query: SELECT* FROM nguoidung where email='aaaa.@gmail.com' limit 1
+[22:27:53] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:27:54] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC LIMIT 0,12
+[22:27:54] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:27:54] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC 
+[22:28:03] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (27)
+[22:28:10] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:28:10] [READ]  REPLICATION Query: SELECT * FROM hoadon where id_nguoidung='10' ORDER BY timedathang DESC
+[22:28:10] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:28:12] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (27)
+[22:28:28] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:28:28] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC LIMIT 0,12
+[22:28:28] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:28:29] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC 
+[22:28:30] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (27)
+[22:28:43] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:28:44] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:28:44] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (27)
+[22:28:45] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (27)
+[22:28:48] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (27)
+[22:28:48] [READ]  REPLICATION Query: SELECT*FROM nguoidung where email='aaaa.@gmail.com' limit 1
+[22:28:49] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:28:49] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:28:51] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (27)
+[22:31:09] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (27)
+[22:31:10] [READ]  REPLICATION Query: SELECT*FROM nguoidung where email='aaaa.@gmail.com' limit 1
+[22:31:10] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:31:10] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:31:12] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (27)
+[22:33:16] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (27)
+[22:33:16] [READ]  REPLICATION Query: SELECT*FROM nguoidung where email='aaaa.@gmail.com' limit 1
+[22:33:16] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:33:17] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:33:19] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (27)
+[22:33:36] [READ] MASTER Query: INSERT INTO hoadon (id_hoadon,id_nguoidung,timedathang,tennguoinhan,sdt,diachi,tongtien,trangthai) value('1483','10',current_timestamp(),'Tu','2147483646','fffffffff','89','chưa duyệt')
+[22:33:36] [READ] MASTER Query: INSERT INTO chitiethoadon (id_chitiet,id_hoadon,id_sanpham,soluong) value('','1483','27','1')
+[22:33:36] [READ] MASTER Query: UPDATE sanpham SET soluong='10' where id_sanpham='27'
+[22:33:37] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:33:37] [READ]  REPLICATION Query: SELECT * FROM hoadon where id_nguoidung='10' ORDER BY timedathang DESC
+[22:33:38] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:33:41] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:33:42] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:33:42] [READ]  REPLICATION Query: SELECT*FROM chitiethoadon where id_hoadon in (201)
+[22:33:42] [READ]  REPLICATION Query: SELECT*FROM sanpham where id_sanpham='29' 
+[22:33:42] [READ]  REPLICATION Query: SELECT*FROM sanpham where id_sanpham='28' 
+[22:33:43] [READ]  REPLICATION Query: SELECT*FROM sanpham where id_sanpham='27' 
+[22:33:46] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:33:47] [READ]  REPLICATION Query: SELECT * FROM hoadon where id_nguoidung='10' ORDER BY timedathang DESC
+[22:33:47] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:33:50] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:33:50] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:33:51] [READ]  REPLICATION Query: SELECT*FROM chitiethoadon where id_hoadon in (1483)
+[22:33:51] [READ]  REPLICATION Query: SELECT*FROM sanpham where id_sanpham='27' 
+[22:33:57] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:33:58] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:44:27] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:44:27] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:44:30] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:44:30] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC LIMIT 0,12
+[22:44:30] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:44:31] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC 
+[22:44:35] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (28)
+[22:44:40] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:44:41] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:44:41] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (28)
+[22:44:42] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (28)
+[22:44:47] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (28)
+[22:44:47] [READ]  REPLICATION Query: SELECT*FROM nguoidung where email='aaaa.@gmail.com' limit 1
+[22:44:47] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:44:47] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:44:49] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (28)
+[22:45:03] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:45:03] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC LIMIT 0,12
+[22:45:04] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:45:04] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC 
+[22:45:05] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:45:05] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC LIMIT 0,12
+[22:45:06] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:45:06] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC 
+[22:45:08] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (28)
+[22:45:36] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:45:36] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC LIMIT 0,12
+[22:45:36] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:45:37] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC 
+[22:45:38] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (28)
+[22:45:43] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:45:43] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC LIMIT 0,12
+[22:45:43] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:45:44] [READ]  REPLICATION Query: SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC 
+[22:45:45] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (28)
+[22:45:49] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:45:49] [READ]  REPLICATION Query: SELECT * FROM sanpham WHERE id_danhmucsp='6' ORDER BY id_sanpham DESC LIMIT 0,12
+[22:45:49] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:45:49] [READ]  REPLICATION Query: SELECT * FROM sanpham WHERE id_danhmucsp='6' ORDER BY id_sanpham DESC 
+[22:45:51] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (28)
+[22:45:56] [READ]  REPLICATION Query: SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[22:45:57] [READ]  REPLICATION Query: SELECT * FROM sanpham WHERE id_danhmucsp='5' ORDER BY id_sanpham DESC LIMIT 0,12
+[22:45:57] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[22:45:57] [READ]  REPLICATION Query: SELECT * FROM sanpham WHERE id_danhmucsp='5' ORDER BY id_sanpham DESC 
+[22:45:59] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (28)
