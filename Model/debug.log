@@ -1,0 +1,26 @@
+[DEBUG] Đang kết nối đến MASTER: ec2-54-89-173-176.compute-1.amazonaws.com:3306 (DB: my_cay)
+[DEBUG] Kết nối MASTER thành công!
+[DEBUG] Đang kết nối đến 2 REPLICA(S)...
+[DEBUG] Kết nối REPLICA thành công: ec2-54-235-59-63.compute-1.amazonaws.com
+[DEBUG] Kết nối REPLICA thành công: ec2-98-93-165-20.compute-1.amazonaws.com
+[11:49:16] [DEBUG] Đọc từ REPLICA (Round-Robin)
+[11:49:17] [DEBUG] Đọc từ REPLICA (Round-Robin)
+[11:49:17] [DEBUG] Đọc từ REPLICA (Round-Robin)
+[DEBUG] Đang kết nối đến MASTER: ec2-54-89-173-176.compute-1.amazonaws.com:3306 (DB: my_cay)
+[DEBUG] Kết nối MASTER thành công!
+[DEBUG] Đang kết nối đến 2 REPLICA(S)...
+[DEBUG] Kết nối REPLICA thành công: ec2-54-235-59-63.compute-1.amazonaws.com
+[DEBUG] Kết nối REPLICA thành công: ec2-98-93-165-20.compute-1.amazonaws.com
+[DEBUG] 🔗 Đang kết nối MASTER: ec2-54-89-173-176.compute-1.amazonaws.com | PORT: 3306 | DB: my_cay
+[DEBUG] ✅ MASTER kết nối thành công!
+[DEBUG] 🔗 Đang kết nối 2 REPLICA(S)...
+[DEBUG] ✅ REPLICA kết nối OK: ec2-54-235-59-63.compute-1.amazonaws.com
+[DEBUG] ✅ REPLICA kết nối OK: ec2-98-93-165-20.compute-1.amazonaws.com
+[11:59:41] [READ] 🟢 REPLICA (Round-Robin)
+[11:59:42] [READ] 🟢 REPLICA (Round-Robin)
+[11:59:42] [READ] 🟢 REPLICA (Round-Robin)
+[DEBUG] 🔗 Đang kết nối MASTER: ec2-54-89-173-176.compute-1.amazonaws.com | PORT: 3306 | DB: my_cay
+[DEBUG] ✅ MASTER kết nối thành công!
+[DEBUG] 🔗 Đang kết nối 2 REPLICA(S)...
+[DEBUG] ✅ REPLICA kết nối OK: ec2-54-235-59-63.compute-1.amazonaws.com
+[DEBUG] ✅ REPLICA kết nối OK: ec2-98-93-165-20.compute-1.amazonaws.com

@@ -344,3 +344,15 @@
 [11:30:06] [READ-LB] SLAVE (Round-Robin): SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC LIMIT 0,12
 [11:30:06] [READ-LB] SLAVE (Round-Robin): SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
 [11:30:07] [READ-LB] SLAVE (Round-Robin): SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC 
+[11:45:33] [READ-LB] SLAVE (Round-Robin): SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC LIMIT 0,12
+[11:45:33] [READ-LB] SLAVE (Round-Robin): SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[11:45:34] [READ-LB] SLAVE (Round-Robin): SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC 
+[11:49:16] [READ-LB] SLAVE (Round-Robin): SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC LIMIT 0,12
+[11:49:17] [READ-LB] SLAVE (Round-Robin): SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[11:49:17] [READ-LB] SLAVE (Round-Robin): SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC 
+[11:56:15] [READ-LB] SLAVE (Round-Robin): SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC LIMIT 0,12
+[11:56:16] [READ-LB] SLAVE (Round-Robin): SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[11:56:16] [READ-LB] SLAVE (Round-Robin): SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC 
+[11:59:41] [READ-LB] SLAVE (Round-Robin): SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC LIMIT 0,12
+[11:59:42] [READ-LB] SLAVE (Round-Robin): SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[11:59:42] [READ-LB] SLAVE (Round-Robin): SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC 

@@ -9,18 +9,25 @@ class ConnectionRouter {
 
     public function __construct(array $cfg) {
         // 1. Kết nối MASTER (Dùng để Ghi)
+        $debugMsg = "[DEBUG] 🔗 Đang kết nối MASTER: " . $cfg['MASTER_HOST'] . " | PORT: " . $cfg['MASTER_PORT'] . " | DB: " . $cfg['DB'];
+        error_log($debugMsg . "\n", 3, __DIR__."/debug.log");
         $this->master = @new mysqli(
             $cfg['MASTER_HOST'], $cfg['USER'], $cfg['PASS'], $cfg['DB'], (int)$cfg['MASTER_PORT']
         );
         if ($this->master->connect_error) die("Master connect failed: " . $this->master->connect_error);
+        error_log("[DEBUG] ✅ MASTER kết nối thành công!\n", 3, __DIR__."/debug.log");
         $this->master->set_charset("utf8mb4");
 
         // 2. Kết nối CÁC REPLICA (Dùng để Đọc)
+        error_log("[DEBUG] 🔗 Đang kết nối " . count($cfg['REPLICA_HOSTS']) . " REPLICA(S)...\n", 3, __DIR__."/debug.log");
         foreach ($cfg['REPLICA_HOSTS'] as $host) {
             $rep = @new mysqli($host, $cfg['USER'], $cfg['PASS'], $cfg['DB'], (int)$cfg['REPLICA_PORT']);
             if ($rep && !$rep->connect_error) {
                 $rep->set_charset("utf8mb4");
                 $this->replicas[] = $rep;
+                error_log("[DEBUG] ✅ REPLICA kết nối OK: " . $host . "\n", 3, __DIR__."/debug.log");
+            } else {
+                error_log("[DEBUG] ❌ REPLICA FAILED: " . $host . "\n", 3, __DIR__."/debug.log");
             }
         }
     }
@@ -49,6 +56,7 @@ class ConnectionRouter {
         // Chế độ "Đọc những gì vừa ghi": Nếu vừa ghi xong trong 3s thì bắt buộc đọc từ Master
         if ($isRead && $this->forceReadYourWrites && $this->lastWriteAt !== null
             && (time() - $this->lastWriteAt) <= $this->readYourWritesWindowSec) {
+            error_log("[$time] [READ] 🟡 MASTER (Read-your-writes)\n", 3, __DIR__."/debug.log");
             error_log("[$time] [READ-LB] MASTER (Read-your-writes): $sql\n", 3, __DIR__."/query.log");
             return $this->master->query($sql);
         }
@@ -56,15 +64,18 @@ class ConnectionRouter {
         if ($isRead) {
             $replica = $this->getReplica();
             if ($replica) {
+                error_log("[$time] [READ] 🟢 REPLICA (Round-Robin)\n", 3, __DIR__."/debug.log");
                 error_log("[$time] [READ-LB] SLAVE (Round-Robin): $sql\n", 3, __DIR__."/query.log");
                 $res = $replica->query($sql);
                 if ($res !== false) return $res;
             }
             // Nếu không có replica nào sống, fallback về Master
+            error_log("[$time] [READ] 🟡 MASTER (Fallback)\n", 3, __DIR__."/debug.log");
             error_log("[$time] [READ-LB] MASTER (Fallback): $sql\n", 3, __DIR__."/query.log");
             return $this->master->query($sql);
         } else {
             // Lệnh GHI (INSERT, UPDATE, DELETE...) luôn vào Master
+            error_log("[$time] [WRITE] 🔴 MASTER\n", 3, __DIR__."/debug.log");
             error_log("[$time] [WRITE] MASTER: $sql\n", 3, __DIR__."/query.log");
             $res = $this->master->query($sql);
             if ($res !== false) $this->lastWriteAt = time();
