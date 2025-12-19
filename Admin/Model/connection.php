@@ -49,23 +49,23 @@ class ConnectionRouter {
         // Chế độ "Đọc những gì vừa ghi": Nếu vừa ghi xong trong 3s thì bắt buộc đọc từ Master
         if ($isRead && $this->forceReadYourWrites && $this->lastWriteAt !== null
             && (time() - $this->lastWriteAt) <= $this->readYourWritesWindowSec) {
-            error_log("[$time] [READ-LB] MASTER (Read-your-writes): $sql\n", 3, __DIR__."/query.log");
+            // error_log("[$time] [READ-LB] MASTER (Read-your-writes): $sql\n", 3, __DIR__."/query.log");
             return $this->master->query($sql);
         }
 
         if ($isRead) {
             $replica = $this->getReplica();
             if ($replica) {
-                error_log("[$time] [READ-LB] SLAVE (Round-Robin): $sql\n", 3, __DIR__."/query.log");
+                // error_log("[$time] [READ-LB] SLAVE (Round-Robin): $sql\n", 3, __DIR__."/query.log");
                 $res = $replica->query($sql);
                 if ($res !== false) return $res;
             }
             // Nếu không có replica nào sống, fallback về Master
-            error_log("[$time] [READ-LB] MASTER (Fallback): $sql\n", 3, __DIR__."/query.log");
+            // error_log("[$time] [READ-LB] MASTER (Fallback): $sql\n", 3, __DIR__."/query.log");
             return $this->master->query($sql);
         } else {
             // Lệnh GHI (INSERT, UPDATE, DELETE...) luôn vào Master
-            error_log("[$time] [WRITE] MASTER: $sql\n", 3, __DIR__."/query.log");
+            // error_log("[$time] [WRITE] MASTER: $sql\n", 3, __DIR__."/query.log");
             $res = $this->master->query($sql);
             if ($res !== false) $this->lastWriteAt = time();
             return $res;

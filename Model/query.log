@@ -359,3 +359,51 @@
 [12:21:28] [READ-LB] SLAVE (Round-Robin): SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC LIMIT 0,12
 [12:21:28] [READ-LB] SLAVE (Round-Robin): SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
 [12:21:29] [READ-LB] SLAVE (Round-Robin): SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC 
+[12:40:09] [READ-LB] SLAVE (Round-Robin): SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC LIMIT 0,12
+[12:40:09] [READ-LB] SLAVE (Round-Robin): SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[12:40:10] [READ-LB] SLAVE (Round-Robin): SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC 
+[12:40:18] [READ-LB] SLAVE (Round-Robin): SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[12:40:23] [READ-LB] SLAVE (Round-Robin): SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[12:40:27] [READ-LB] SLAVE (Round-Robin): SELECT* FROM nguoidung where email='aaaa.@gmail.com' limit 1
+[12:40:29] [READ-LB] SLAVE (Round-Robin): SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[12:40:30] [READ-LB] SLAVE (Round-Robin): SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC LIMIT 0,12
+[12:40:30] [READ-LB] SLAVE (Round-Robin): SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[12:40:30] [READ-LB] SLAVE (Round-Robin): SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC 
+[12:40:38] [READ-LB] SLAVE (Round-Robin): SELECT * FROM sanpham where id_sanpham in (28)
+[12:40:40] [READ-LB] SLAVE (Round-Robin): SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[12:40:41] [READ-LB] SLAVE (Round-Robin): SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[12:40:41] [READ-LB] SLAVE (Round-Robin): SELECT * FROM sanpham where id_sanpham in (28)
+[12:40:43] [READ-LB] SLAVE (Round-Robin): SELECT * FROM sanpham where id_sanpham in (28)
+[12:40:47] [READ-LB] SLAVE (Round-Robin): SELECT * FROM sanpham where id_sanpham in (28)
+[12:40:47] [READ-LB] SLAVE (Round-Robin): SELECT*FROM nguoidung where email='aaaa.@gmail.com' limit 1
+[12:40:47] [READ-LB] SLAVE (Round-Robin): SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[12:40:48] [READ-LB] SLAVE (Round-Robin): SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[12:40:50] [READ-LB] SLAVE (Round-Robin): SELECT * FROM sanpham where id_sanpham in (28)
+[12:40:53] [WRITE] MASTER: INSERT INTO hoadon (id_hoadon,id_nguoidung,timedathang,tennguoinhan,sdt,diachi,tongtien,trangthai) value('8782','10',current_timestamp(),'tuong','2147483646','fffffffff','89','chưa duyệt')
+[12:40:53] [WRITE] MASTER: INSERT INTO chitiethoadon (id_chitiet,id_hoadon,id_sanpham,soluong) value('','8782','28','1')
+[12:40:53] [READ-LB] MASTER (Read-your-writes): SELECT * FROM sanpham where id_sanpham in (28)
+[12:40:53] [WRITE] MASTER: UPDATE sanpham SET soluong='5' where id_sanpham='28'
+[12:40:55] [READ-LB] SLAVE (Round-Robin): SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[12:40:56] [READ-LB] SLAVE (Round-Robin): SELECT * FROM hoadon where id_nguoidung='10' ORDER BY timedathang DESC
+[12:40:56] [READ-LB] SLAVE (Round-Robin): SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[12:41:59] [READ-LB] SLAVE (Round-Robin): SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[12:41:59] [READ-LB] SLAVE (Round-Robin): SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC LIMIT 0,12
+[12:42:00] [READ-LB] SLAVE (Round-Robin): SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[12:42:00] [READ-LB] SLAVE (Round-Robin): SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC 
+[12:42:09] [READ-LB] SLAVE (Round-Robin): SELECT * FROM sanpham where id_sanpham in (18)
+[12:42:11] [READ-LB] SLAVE (Round-Robin): SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[12:42:11] [READ-LB] SLAVE (Round-Robin): SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[12:42:12] [READ-LB] SLAVE (Round-Robin): SELECT * FROM sanpham where id_sanpham in (18)
+[12:42:14] [READ-LB] SLAVE (Round-Robin): SELECT * FROM sanpham where id_sanpham in (18)
+[12:42:17] [READ-LB] SLAVE (Round-Robin): SELECT * FROM sanpham where id_sanpham in (18)
+[12:42:18] [READ-LB] SLAVE (Round-Robin): SELECT*FROM nguoidung where email='aaaa.@gmail.com' limit 1
+[12:42:18] [READ-LB] SLAVE (Round-Robin): SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[12:42:18] [READ-LB] SLAVE (Round-Robin): SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[12:42:21] [READ-LB] SLAVE (Round-Robin): SELECT * FROM sanpham where id_sanpham in (18)
+[12:42:25] [WRITE] MASTER: INSERT INTO hoadon (id_hoadon,id_nguoidung,timedathang,tennguoinhan,sdt,diachi,tongtien,trangthai) value('2381','10',current_timestamp(),'tuong1','2147483646','fffffffff','49','chưa duyệt')
+[12:42:25] [WRITE] MASTER: INSERT INTO chitiethoadon (id_chitiet,id_hoadon,id_sanpham,soluong) value('','2381','18','1')
+[12:42:26] [READ-LB] MASTER (Read-your-writes): SELECT * FROM sanpham where id_sanpham in (18)
+[12:42:26] [WRITE] MASTER: UPDATE sanpham SET soluong='11' where id_sanpham='18'
+[12:42:28] [READ-LB] SLAVE (Round-Robin): SELECT * FROM nguoidung where id_nguoidung ='10' limit 1
+[12:42:28] [READ-LB] SLAVE (Round-Robin): SELECT * FROM hoadon where id_nguoidung='10' ORDER BY timedathang DESC
+[12:42:28] [READ-LB] SLAVE (Round-Robin): SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
