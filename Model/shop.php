@@ -8,7 +8,7 @@ class Shop extends Model
         return $data;
     }
     function tk_limit($tukhoa,$begin){
-        $query = "SELECT * FROM sanpham WHERE tensanpham LIKE '%".$tukhoa."%' ORDER BY id_sanpham DESC LIMIT $begin,12 AND gia DESC";
+        $query = "SELECT * FROM sanpham WHERE tensanpham LIKE '%".$tukhoa."%' ORDER BY id_sanpham DESC LIMIT $begin,12";
         require("result.php");
         return $data;
     }

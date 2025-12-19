@@ -340,3 +340,7 @@
 [22:45:57] [READ]  REPLICATION Query: SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
 [22:45:57] [READ]  REPLICATION Query: SELECT * FROM sanpham WHERE id_danhmucsp='5' ORDER BY id_sanpham DESC 
 [22:45:59] [READ]  REPLICATION Query: SELECT * FROM sanpham where id_sanpham in (28)
+[11:29:57] [READ-LB] SLAVE (Round-Robin): SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[11:30:06] [READ-LB] SLAVE (Round-Robin): SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC LIMIT 0,12
+[11:30:06] [READ-LB] SLAVE (Round-Robin): SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[11:30:07] [READ-LB] SLAVE (Round-Robin): SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC 
