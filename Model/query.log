@@ -356,3 +356,6 @@
 [11:59:41] [READ-LB] SLAVE (Round-Robin): SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC LIMIT 0,12
 [11:59:42] [READ-LB] SLAVE (Round-Robin): SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
 [11:59:42] [READ-LB] SLAVE (Round-Robin): SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC 
+[12:21:28] [READ-LB] SLAVE (Round-Robin): SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC LIMIT 0,12
+[12:21:28] [READ-LB] SLAVE (Round-Robin): SELECT * FROM danhmucsanpham ORDER BY id_danhmuc DESC
+[12:21:29] [READ-LB] SLAVE (Round-Robin): SELECT * FROM sanpham,danhmucsanpham WHERE sanpham.id_danhmucsp=danhmucsanpham.id_danhmuc ORDER BY sanpham.id_sanpham DESC 
