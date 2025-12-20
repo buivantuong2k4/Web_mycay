@@ -93,13 +93,13 @@ class connection {
 
     function __construct() {
         $this->mysqli = new ConnectionRouter([
-            'MASTER_HOST' => 'ec2-3-26-13-113.ap-southeast-2.compute.amazonaws.com', // IP Master của bạn
+            'MASTER_HOST' => 'ec2-54-89-173-176.compute-1.amazonaws.com', // IP Master của bạn
             'MASTER_PORT' => 3306,
 
             // DANH SÁCH 2 SLAVE
             'REPLICA_HOSTS' => [
-                'ec2-13-54-225-50.ap-southeast-2.compute.amazonaws.com'
-                // 'ec2-52-62-117-143.ap-southeast-2.compute.amazonaws.com'
+                'ec2-54-235-59-63.compute-1.amazonaws.com',
+                'ec2-54-235-59-63.compute-1.amazonaws.com'
             ],
             'REPLICA_PORT' => 3306,
 
