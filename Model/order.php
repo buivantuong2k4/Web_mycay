@@ -15,7 +15,7 @@ class Order extends Model
     }
 
     function dkchitiet_hoadon($data1){
-        $query="INSERT INTO chitiethoadon (id_chitiet,id_hoadon,id_sanpham,soluong) value('','".$data1['id_hoadon']."','".$data1['id_sanpham']."','".$data1['soluong']."')";
+        $query="INSERT INTO chitiethoadon (id_hoadon,id_sanpham,soluong) value('".$data1['id_hoadon']."','".$data1['id_sanpham']."','".$data1['soluong']."')";
         $this->mysqli->query($query);
     }
 
