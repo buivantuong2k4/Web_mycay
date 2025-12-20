@@ -37,7 +37,7 @@ class Order extends Model
     }
     function updata_sp($data1){
         $query="UPDATE sanpham SET soluong='".$data1["sl_sau"]."' where id_sanpham='".$data1["id_sanpham"]."'";
-        echo $query;
+        // echo $query;
         $this->mysqli->query($query);
     }
 }
