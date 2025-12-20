@@ -24,3 +24,25 @@
 [DEBUG] 🔗 Đang kết nối 2 REPLICA(S)...
 [DEBUG] ✅ REPLICA kết nối OK: ec2-54-235-59-63.compute-1.amazonaws.com
 [DEBUG] ✅ REPLICA kết nối OK: ec2-98-93-165-20.compute-1.amazonaws.com
+[2025-12-19 17:02:33] Query: INSERT INTO nguoidung (tennguoidung, diachi, matkhau, sdt, email, ma_pq, hinhanh) 
+              VALUES (
+                'Thân', 
+                '', 
+                '34343434', 
+                '', 
+                'aaaa.@gmail.com', 
+                '1', 
+                'tải xuống (15).jpg'
+              )
+[2025-12-19 17:02:33] Lỗi: Dữ liệu không được lưu vào database.
+[2025-12-19 17:04:54] Query: INSERT INTO nguoidung (tennguoidung, diachi, matkhau, sdt, email, ma_pq, hinhanh) 
+              VALUES (
+                'Thân', 
+                'Quảng Nam', 
+                '34343434', 
+                '09050509', 
+                'aaa.@gmail.com', 
+                '1', 
+                'tải xuống (15).jpg'
+              )
+[2025-12-19 17:04:54] Thành công: Dữ liệu đã lưu.

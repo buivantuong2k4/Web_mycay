@@ -55,21 +55,23 @@
         $productImage = htmlspecialchars($sp['hinhanh'] ?? '');
         $stock = (int)($sp['soluong'] ?? 0);
     ?>
-    <div class="box-item" style="transition: 0.3s; border: none; background: white;">
-      <a href="?quanly=shop&action=chitiet&idsp=<?php echo $productId; ?>" style="text-decoration: none;">
-        <div class="box-img" style="position: relative; overflow: hidden; border-radius: 10px; background: #f5f5f5; aspect-ratio: 1/1; display: flex; align-items: center; justify-content: center;">
+    <div class="box-item" style="transition: 0.3s; border: none; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; position: relative;">
+      <a href="?quanly=shop&action=chitiet&idsp=<?php echo $productId; ?>" style="text-decoration: none; flex: 1; display: flex; flex-direction: column;">
+        <div class="box-img" style="position: relative; overflow: hidden; border-radius: 8px 8px 0 0; background: #f5f5f5; aspect-ratio: 1/1; display: flex; align-items: center; justify-content: center;">
           <img class="img img-responsive" width="100%" src="Public/img/<?php echo $productImage; ?>" alt="<?php echo $productName; ?>" style="object-fit: cover; width: 100%; height: 100%; transition: 0.3s;">
           <?php if($stock <= 0): ?>
-            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); display: flex; align-items: center; justify-content: center; border-radius: 10px;">
+            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); display: flex; align-items: center; justify-content: center; border-radius: 8px 8px 0 0;">
               <span style="color: white; font-weight: 700; font-size: 16px;">Hết hàng</span>
             </div>
           <?php endif; ?>
         </div>
-        <p class="title_product" style="margin-top: 12px; font-size: 14px; color: #333; font-weight: 600; height: 40px; overflow: hidden;"><?php echo $productName; ?></p>
-        <p class="price_product" style="color: #ec0e19; font-weight: 700; font-size: 16px;">💰 <?php echo $productPrice; ?> VNĐ</p>
+        <div style="padding: 12px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+          <p class="title_product" style="margin-top: 0; margin-bottom: 8px; font-size: 14px; color: #333; font-weight: 600; height: auto; overflow: hidden; line-height: 1.3;"><?php echo $productName; ?></p>
+          <p class="price_product" style="color: #ec0e19; font-weight: 700; font-size: 16px; margin: 0;">💰 <?php echo $productPrice; ?> VNĐ</p>
+        </div>
       </a>
       <?php if($stock > 0): ?>
-        <button class="add_cart" value="<?php echo $productId; ?>" style="cursor: pointer; transition: 0.3s;" title="Thêm vào giỏ">➕</button>
+        <button class="add_cart" value="<?php echo $productId; ?>" title="Thêm vào giỏ">➕</button>
       <?php endif; ?>
     </div>
     <?php }

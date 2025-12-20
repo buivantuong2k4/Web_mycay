@@ -98,8 +98,8 @@ class connection {
 
             // DANH SÁCH 2 SLAVE
             'REPLICA_HOSTS' => [
-                'ec2-13-54-225-50.ap-southeast-2.compute.amazonaws.com', 
-                'ec2-52-62-117-143.ap-southeast-2.compute.amazonaws.com'
+                'ec2-13-54-225-50.ap-southeast-2.compute.amazonaws.com'
+                // 'ec2-52-62-117-143.ap-southeast-2.compute.amazonaws.com'
             ],
             'REPLICA_PORT' => 3306,
 

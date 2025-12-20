@@ -262,8 +262,72 @@ color: black !important;
     color: #ec0e19;
     font-weight: 700;
   }
-  
- 
+
+/* Add to Cart Button - Home Page */
+.box-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.add_cart {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #ec0e19;
+  color: white;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(236, 14, 25, 0.3);
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.8);
+}
+
+.box-item:hover .add_cart {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+.add_cart:hover {
+  background-color: #cc0a14;
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(236, 14, 25, 0.5);
+}
+
+.add_cart:active {
+  transform: scale(0.95);
+}
+
+.add_cart.clicked {
+  animation: pulse 0.6s ease-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 4px 12px rgba(236, 14, 25, 0.5);
+  }
+  50% {
+    transform: scale(1.15);
+    box-shadow: 0 6px 20px rgba(236, 14, 25, 0.8);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 2px 8px rgba(236, 14, 25, 0.3);
+  }
+}
+
 /* bài viết */
 .boxbv{
   display: grid;
@@ -974,22 +1038,40 @@ text-transform: uppercase;
 }
 
 .modal-body{
-
   min-width: 500px;
   display: none;
-  z-index: 100;
+  z-index: 1001;
   position: absolute;
-  background-color:white;
+  background-color: white;
   padding: 10px;
-  border: 1px solid  rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   overflow: auto;
   max-height: 350px;
+  top: 100%;
+  right: 0;
+  margin-top: 8px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
-.nav_cart{
-position: relative;
+
+.nav_cart {
+  position: relative;
 }
- .nav_cart:hover .modal-body{
-display: block !important;
+
+.nav_cart:hover .modal-body {
+  display: block !important;
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 /*  */
 /* Tabs */

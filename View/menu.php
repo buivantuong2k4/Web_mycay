@@ -289,8 +289,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="?quanly=baiviet">🎁 Ưu Đãi</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item nav_cart">
                     <a class="nav-link" href="?quanly=giohang">🛒 Giỏ Hàng</a>
+                    <div class="modal-body"></div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="?quanly=home&action=lienhe">✉️ Liên Hệ</a>

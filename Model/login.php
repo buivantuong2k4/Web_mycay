@@ -2,10 +2,21 @@
 require_once("model.php");
 class Login extends Model
 {
-    function dangki($data){
-        $query="INSERT INTO nguoidung (id_nguoidung,tennguoidung,diachi,matkhau,sdt,email,ma_pq,hinhanh) value ('','".$data['ten']."','".$data['diachi']."','".$data['matkhau']."','".$data['sdt']."','".$data['email']."','".$data['ma_pq']."','".$data['hinhanh']."')";
-        $this->mysqli->query($query);
-    }
+   function dangki($data){
+    // Cách 1: Bỏ hẳn cột id_nguoidung để Database tự tăng
+    $query = "INSERT INTO nguoidung (tennguoidung, diachi, matkhau, sdt, email, ma_pq, hinhanh) 
+              VALUES (
+                '".$data['ten']."', 
+                '".$data['diachi']."', 
+                '".$data['matkhau']."', 
+                '".$data['sdt']."', 
+                '".$data['email']."', 
+                '".$data['ma_pq']."', 
+                '".$data['hinhanh']."'
+              )";
+
+    $this->mysqli->query($query);
+}
 
     function dangnhap($data){
         $query="SELECT* FROM nguoidung where email='".$data['email']."' limit 1";

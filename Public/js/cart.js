@@ -71,6 +71,12 @@ view_data();
 
     $(".add_cart").click( function() {
         var id=$(this).val();
+        var btn = $(this);
+        
+        btn.addClass('clicked');
+        setTimeout(function() {
+            btn.removeClass('clicked');
+        }, 600);
       
         $.ajax({
             method:"post",
